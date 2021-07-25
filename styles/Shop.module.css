@@ -1,0 +1,52 @@
+/* Shoppage CSS */
+.price {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    color: #5e2ced;
+  }
+  
+  .error {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;
+  }
+  
+  .shoppage h1 {
+    text-align: center;
+  }
+  
+  .productwrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .productinnerwrap {
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.5rem;
+    width: 30.33%;
+    text-align: center;
+    padding: 15px;
+    margin: 15px;
+  }
+  
+  .image {
+    overflow: hidden;
+  }
+  
+  .image img {
+    width: auto;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .title {
+    margin-top: 15px;
+    font-weight: bold;
+  }
