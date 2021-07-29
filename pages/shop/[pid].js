@@ -36,7 +36,7 @@ export default function Shop(props) {
 
   useEffect(() => {
     SetTotal();
-  });
+  },[]);
 
   const SetTotal = () => {
     let total = 0;
@@ -51,12 +51,11 @@ export default function Shop(props) {
 
   useEffect(() => {
     handleLocalStorage();
-  }, []);
+  }, [qty]);
 
   const handleLocalStorage = (e, detail) => {
-      console.log(detail);
     const qtyUpdate = { ...detail, qty: qty };
-    localStorage.setItem('cartdata', JSON.stringify(qtyUpdate));
+    // localStorage.setItem('cartdata', JSON.stringify(qtyUpdate));
     setCartTotal(cartTotal + qtyUpdate.price);
     const matchProduct = cart.some((data) => detail.id === data.id);
     if (matchProduct) {
